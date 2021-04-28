@@ -6,7 +6,7 @@ const MyRecipes = () => {
   const [recipes, setRecipe] = useState('')
   const [recipeDisplay, setRecipeDisplay] = useState([])
 
-  const key = '361d685ac8904161967c1545759b43eb'
+  const key = process.env.REACT_APP_FOODS_API_KEY
 
   useEffect(() => {
     const getData = async () => {
