@@ -10,7 +10,19 @@ To make a web app using React, using at least one external API, within 48 hours.
 
 ## Technologies Used:
 
-HTML5 CSS3 JavaScript (ES6) React Insomnia Bulma Git GitHub Adobe Fonts Google Chrome dev tools VS Code Eslint Photoshop
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- React
+- Insomnia
+- Bulma
+- Git
+- GitHub
+- Adobe Fonts
+- Google Chrome dev tools
+- VS Code
+- Eslint
+- Photoshop
 
 ## Approach:
 
