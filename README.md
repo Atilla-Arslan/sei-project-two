@@ -30,7 +30,9 @@ The first challenge was learning how the spoonacular API worked. It has a lot of
 
 Once we figured this out using the documentation and trial and error through Insomnia we could call the data within our app
 
+```javascript
 useEffect(() => { const getData = async () => { const response = await axios.get( `https://api.spoonacular.com/recipes/complexSearch?query=${mealSearch}&cuisine=${cuisine}&diet=${diet}&number=50&apiKey=${key}` ) setMeals(response.data) } getData() }, [mealSubmit, cuisine, diet])
+```
 
 We could then set each parameter to state and make a new request when the state was updated and then set the result of the GET request to state.
 
