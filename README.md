@@ -1,4 +1,4 @@
-# SEI - Project Two Readme
+# General Assembly SEI - Project Two - Eatwell - Readme
 
 This was my second project that I completed in my Software Engineering Immerse Course at General Assembly. Without much notice we were given 48 hours to create a React based web app in a team of two.
 
@@ -30,7 +30,7 @@ Mockup:
 
 The first thing I did was start mocking up the design of the app using Photoshop, whilst my partner was researching the API endpoints.
 
-<img width="964" alt="mock-up" src="https://lh6.googleusercontent.com/hU9CIz3HGNxVAVc9cmhOqTFKZD0sksjW6_X89zLItPu-KqThXrJw4JwnpX_aOWSX71nNuGPy7WMOsVCyZRGmjwg4mjb4KwGqbnOir--v">
+<img width="964" alt="mock-up" src="https://lh4.googleusercontent.com/puFIRzdikkSkjHKL9KMPHFn_8ejrRcU1dmRUTzNEeZhD3wwnl3K6oH7gaS09XDM4ff9_tCWH_FOYhwFxIuV7W0yAeLt7qQj4NJ9jVLFx7R4Sft6u8qsHriYpLMoJc_aNX-Kbb6EK">
 
 I created a full mockup of the home page and some wire frames of the other pages, annotating them with the potential React component structure.
 
