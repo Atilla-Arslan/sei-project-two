@@ -269,7 +269,11 @@ JSX
 
 ### Key Learnings:
 
-Working with complex API’s, data structures and API keys. Using the useState and useEffect hooks to dynamically render elements on the page. Using components to structure the app in a more efficient way. Passing props through to components to share functions and state. Using Params to share parameters between routes.
+- Working with complex API’s, data structures and API keys.
+- Using the useState and useEffect hooks to dynamically render elements on the page.
+- Using components to structure the app in a more efficient way.
+- Passing props through to components to share functions and state.
+- Using Params to share parameters between routes.
 
 ### Wins and Challenges:
 
