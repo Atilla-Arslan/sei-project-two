@@ -24,6 +24,10 @@ To make a web app using React, using at least one external API, within 48 hours.
 - Eslint
 - Photoshop
 
+#### Link to deployed APP:
+
+https://eatwellapp.netlify.app/
+
 ## Approach:
 
 Mockup:
