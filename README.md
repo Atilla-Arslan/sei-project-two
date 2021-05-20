@@ -36,7 +36,7 @@ The first thing I did was start mocking up the design of the app using Photoshop
 
 <img width="964" alt="mock-up" src="https://lh4.googleusercontent.com/puFIRzdikkSkjHKL9KMPHFn_8ejrRcU1dmRUTzNEeZhD3wwnl3K6oH7gaS09XDM4ff9_tCWH_FOYhwFxIuV7W0yAeLt7qQj4NJ9jVLFx7R4Sft6u8qsHriYpLMoJc_aNX-Kbb6EK">
 
-I created a full mockup of the home page and some wire frames of the other pages, annotating them with the potential React component structure.
+I created a full mockup of the home page and some wireframes of the other pages, annotating them with the potential React component structure.
 
 ### Requesting Data from the API
 
@@ -44,7 +44,7 @@ The first thing we needed to do was fetch the data from the API using a package 
 
 The first challenge was learning how the spoonacular API worked. It has a lot of endpoints with many search parameters that you can chain onto the URI.
 
-Once we figured this out using the documentation and trial and error through Insomnia we could call the data within our app
+Once we figured this out using the documentation and trial and error through Insomnia, we could call the data within our app.
 
 ```
 javascript
@@ -57,9 +57,9 @@ We could then set each parameter to state and make a new request when the state 
 
 <img width="964" alt="index-page" src="https://lh5.googleusercontent.com/6hlaHK_vN4dNvmmopAa_OyxDH5FQ6kwPTkPQ2re7emuOA4ZYP_BIAbnHX32TEd2eCjfxShN05aAgWtwmgLWTKfG8J8VVvFT629vjQ3MMCnMFuPxeNAfmRk0kTb9sIlMaoZR2C4Dd">
 
-Once the data had been set to state it was relatively easy to use the data and map through it to display easy of the recipes in a grid. This was done by passing the data through as props to the RecipCard component and destructuring it on the other side.
+Once the data had been set to state, it was relatively easy to use the data and map through it to display easy of the recipes in a grid. This was done by passing the data through as props to the RecipCard component and destructuring it on the other side.
 
-To ensure the app would execute properly I added some conditional rendering to the JSX section mapping through the data to check if state returned true before attempting to map through the data.
+To ensure the app would execute properly I added some conditional rendering to the JSX section, mapping through the data to check if state returned true before attempting to map through the data.
 
 ```
 javascript
@@ -104,13 +104,13 @@ export default RecipeCard
 
 ### Search
 
-To create the search functionality, I first created the handleChange function which takes the event.target.value and sets it to state. Once the typing is finished the user clicks on the search button which calls the newRequest function setting the state of mealSubmit to be mealSearch. Using event.preventDefault() to stop the page refresh inside the newRequest function.
+To create the search functionality, I first created the handleChange function which takes the "event.target.value" and sets it to state. Once the typing is finished the user clicks on the search button, which calls the newRequest function setting the state of mealSubmit to be mealSearch. the function uses "event.preventDefault()" to stop the page refresh inside the newRequest function.
 
-As the Get request was wrapped in a useEffect, tracking changes to mealSubmit it dynamically makes a new request whenever the state of mealSubmit changes.
+As the GET request was wrapped in a useEffect, tracking changes to mealSubmit, it dynamically made a new request whenever the state of mealSubmit changes.
 
 #### Filters
 
-The filters work in exactly the same way, with the only difference being each filter having its own predefined value that when clicked gets passed through and used in the Get request. Because an empty value in the API URI is ignored in the request, it makes it easy to add and remove filters.
+The filters work in exactly the same way, with the only difference being each filter having its own predefined value, that when clicked, gets passed through and used in the GET request. Because an empty value in the API URI is ignored in the request, it makes it easy to add and remove filters.
 
 ```
 javascript
@@ -145,7 +145,7 @@ javascript
 
 #### Passing props to the Navbar
 
-As the search box was in the Navbar component, I had to pass the handleChange function and newRequest function through as props to use them.
+Because the search box was in the Navbar component, I had to pass the handleChange function and newRequest function through as props to use them inside the component.
 
 ```
 javascript
@@ -234,9 +234,9 @@ Javascript
  }
 ```
 
-They were then displayed on the page using JSX by using various elements from the data structure of the response from the request.
+They were then displayed on the page using JSX, this was done by using various elements from the data structure of the response from the request.
 
-One challenge we had was that as it was such a large data set, sometimes you would get incomplete data, which would cause the page to error when it was empty in the response object.
+One challenge we had was that, as it was such a large data set, sometimes you would get incomplete data, which would cause the page to error when it was empty in the response object.
 
 To get around this certain elements were conditionally rendered using ternary statements to determine what to do in the event of the data returning null.
 
